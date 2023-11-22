@@ -3,7 +3,9 @@ import PageTemplate from "../components/templateMovieListPage";
 import { getUpcomingMovies } from "../api/tmdb-api";
 import { useQuery } from "react-query";
 import Spinner from "../components/spinner";
-import PlaylistAddIcon from "@mui/icons-material/PlaylistAdd";
+import AddToWatchlist from "../components/cardIcons/addToWatchlist";
+
+export const MoviesContext = React.createContext(null);
 
 const UpcomingMoviesPage = () => {
   const { data, error, isLoading, isError } = useQuery(
@@ -26,7 +28,7 @@ const UpcomingMoviesPage = () => {
       title="Upcoming Movies"
       movies={upcomingMovies}
       action={(movie) => {
-        return <PlaylistAddIcon movie={movie} />;
+        return <AddToWatchlist movie={movie} />;
       }}
     />
   );
