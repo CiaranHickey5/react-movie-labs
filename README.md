@@ -13,7 +13,7 @@ This repository contains a react movie application which involves "The movie dat
   Now playing movies page. This displays movies that are currently playing.
 + Feature 3
   Top rated movies page. This displays movies with the highest rating in the database.
-  Adding a movies to favourites is still a feature of these thee new features.
+  Adding a movies to favourites and react-query is enabled with these pages.
 + Feature 4
   Recommenedations button added to the card component. This links to the recommendations page. (To be completed)
 + Feature 5
@@ -39,3 +39,6 @@ Must make sure the API key is setup corrently to enable access to the movie data
 + movies/nowPlaying
 + movies/topRated
 + movies/:id/recommendations
+
+# Video Demonstration
+https://youtu.be/3CHsmjDvWF8
